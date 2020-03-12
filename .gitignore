@@ -1,0 +1,4 @@
+*.egg-info
+dist
+build
+tests/test_config.ini
