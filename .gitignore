@@ -2,3 +2,5 @@
 dist
 build
 tests/test_config.ini
+harvest/__pycache__
+tests/__pycache__

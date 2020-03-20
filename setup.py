@@ -25,8 +25,7 @@ classifiers = [
     "Environment :: Console",
     "Intended Audience :: Developers",
     "Natural Language :: English",
-    "Operating System :: POSIX :: Linux",
-    'Operating System :: Microsoft :: Windows',
+    "Operating System :: OS Independent",
     "Programming Language :: Python :: 3.7",
     "Topic :: Software Development :: Libraries",
     "Topic :: Utilities",
@@ -34,7 +33,7 @@ classifiers = [
 ]
 
 setup(
-    name='python-harvest-2_bradbase',
+    name='python-harvest-apiv2',
     version=metadata['__version__'],
     description="Harvest API v2 client",
     long_description="Harvest Time Tracking API v2 Client",
@@ -42,7 +41,7 @@ setup(
     keywords='harvestapp timetracking api',
     author=metadata['__author__'],
     author_email=metadata['__email__'],
-    url='https://github.com/bradbase/python-harvest-2',
+    url='https://github.com/bradbase/python-harvest-apiv2',
     license=metadata['__license__'],
     packages=find_packages(exclude=['ez_setup', 'examples', 'tests']),
     include_package_data=True,
