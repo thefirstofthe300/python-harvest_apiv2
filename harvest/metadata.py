@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 __author__ = "Bradley van Ree"
 __copyright__ = "Copyright 2020 Bradbase"
 __maintainer__ = "Bradley van Ree"
