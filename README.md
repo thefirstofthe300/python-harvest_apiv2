@@ -1,7 +1,7 @@
 
-![Version](https://img.shields.io/pypi/v/python-harvest-2.svg?style=flat)
-![License](https://img.shields.io/pypi/l/python-harvest-2.svg?style=flat)
-![Versions](https://img.shields.io/pypi/pyversions/python-harvest-2.svg?style=flat)
+![Version](https://img.shields.io/pypi/v/python-harvest_apiv2.svg?style=flat)
+![License](https://img.shields.io/pypi/l/python-harvest_apiv2.svg?style=flat)
+![Versions](https://img.shields.io/pypi/pyversions/python-harvest_apiv2.svg?style=flat)
 
 ### Installation
 
@@ -127,6 +127,12 @@ from harvest.dataclasses import *
 implicit_code_flow_token = OAuth2_ClientSide_Token(access_token="ACCESS TOKEN", expires_in="EXPIRES IN", token_type="Bearer", scope=["Harvest:ACCOUNTID", "Forecast:ACCOUNTID"])
 ```
 
+### Run tests
+From the root python-harvest_apiv2 directory
+```python
+python -m unittest discover -p "*_test.py"
+```
+
 ### Contributions
 
 Contributions are welcome. Please submit a pull request and make sure you adhere to PEP-8 coding guidelines. I'll review your patch and will accept if it looks good.
@@ -136,4 +142,4 @@ No current TODOs. :D
 
 ### License
 
-python-harvest-2 is licensed under Apache 2.0. See [LICENSE](LICENSE) for more details.
+python-harvest_apiv2 is licensed under Apache 2.0. See [LICENSE](LICENSE) for more details.
