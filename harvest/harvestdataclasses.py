@@ -499,6 +499,14 @@ class ProjectTaskAssignments:
     task: TaskRef = None
 
 @dataclass
+class ExternalRef:
+    id: str = None
+    group_id: str = None
+    permalink: str = None
+    service: str = None
+    service_icon_url: str = None
+
+@dataclass
 class TimeEntry:
     notes: Optional[str]
     locked_reason: Optional[str]
@@ -506,7 +514,7 @@ class TimeEntry:
     started_time: Optional[str]
     ended_time: Optional[str]
     invoice: Optional[InvoiceRef]
-    external_reference: Optional[str]
+    external_reference: Optional[ExternalRef]
     billable_rate: Optional[float]
     id: int = None
     spent_date: str = None
@@ -525,7 +533,7 @@ class TimeEntry:
     is_running: bool = None
     billable: bool = None
     budgeted: bool = None
-    cost_rate: float = None
+    cost_rate: Optional[float] = None
 
 
 @dataclass
