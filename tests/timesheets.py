@@ -190,7 +190,13 @@ class TestTimesheets(unittest.TestCase):
                         "id":13150403,
                         "number":"1001"
                     },
-                "external_reference":None,
+                "external_reference":{
+                        "id":"31356723",
+                        "group_id":"Cyberdyne",
+                        "permalink":"https://isengard.net/merry/and/pippin",
+                        "service":"with_a_smile",
+                        "service_icon_url":"https://isengard.net/saruman.jpg"
+                    },
                 "billable":True,
                 "budgeted":True,
                 "billable_rate":100.0,
@@ -482,7 +488,7 @@ class TestTimesheets(unittest.TestCase):
                 "billable": True,
                 "budgeted": False,
                 "billable_rate": 100.00, # TODO: this is supposed to be an int. Something isn't casting int to float.
-                "cost_rate": 75.00 # TODO: this is supposed to be an int. Something isn't casting int to float.
+                "cost_rate": None
             }
 
         time_entries_dict = {
